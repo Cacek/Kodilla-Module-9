@@ -1,0 +1,17 @@
+{
+  "name": "kodilla-cacek",
+  "version": "1.0.0",
+  "description": "Kodilla Grunt Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Cacek",
+  "license": "ISC",
+  "devDependencies": {
+	"grunt-contrib-jshint": "^1.1.0"
+  }
+}
