@@ -9,14 +9,16 @@ function getNewName(name) {
         alert('Podane imie znajduje sie juz w bazie');
     } else {
         allNames.push(name);
-        return document.write('Dodales imie ' + name + ' do bazy' + '<BR>');
+        document.write('Dodales imie ' + name + ' do bazy' + '<br>');
+        return '';
     }
 }
 
 function printArray(array) {
     for (i = 0; i < array.length; i++) {
-        document.write(array[i] + '<BR>');
+        document.write(array[i] + '<br>');
     }
+    return '';
 }
 
 
