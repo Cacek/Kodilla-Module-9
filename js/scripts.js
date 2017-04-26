@@ -2,7 +2,7 @@ var a = prompt('Podaj a: ');
 var h = prompt('Podaj h: ');
 
 function getTriangleArea(a, h) {
-    if ((a <= 0) && (h <= 0)) {
+    if (a <= 0 || h <= 0) {
         document.writeln('Podales nieprawidlowe dane, wszystkie musza być większe od 0');
     } else {
         
