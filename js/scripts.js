@@ -1,17 +1,21 @@
 var tree = prompt('Podaj wysokosc choinki: ');
 
 function drawTree(tree) {
+    debugger;
     for (var i = 1; i <= tree; i++) 
     {
         for (var j = i; j < tree; j++) {
-            console.log(' ');
+            var star = '';
+            star += ' ';
+            document.write("&nbsp;");
         }
 
-        for (var j = 1; j <= (2 * i - 1); j++) {
-            console.log('*');
+        for  (j = 1; j <= (2 * i - 1); j++) {
+            star += ' * ';
+            document.write(" * ");
         }
-
-    console.log('\n');
+    document.write("<br>");
+    console.log(star);
     }
 
 }
