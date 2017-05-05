@@ -1,4 +1,5 @@
 var newGameBtn = document.getElementById('js-newGameButton');
+
 newGameBtn.addEventListener('click', newGame);
 
 var pickRock = document.getElementById('js-playerPick_rock'),
@@ -38,7 +39,12 @@ function setGameElements() {
 
         case 'ended':
             newGameBtn.innerText = 'Jeszcze raz';
-        
+            playerPickElem.innerText = 'Wybór gracza';
+            playerResultElem.innerText = 'Wynik gracza'
+            computerPickElem.innerText = 'Wybór komputera';
+            computerResultElem.innerText = 'Wynik komputera';
+            
+            
             
         case 'notStarted':
 
@@ -48,6 +54,8 @@ function setGameElements() {
             resultsElem.style.display = 'none';
     }
 }
+
+setGameElements();
 
 var playerPointsElem = document.getElementById('js-playerPoints'),
     playerNameElem = document.getElementById('js-playerName'),
